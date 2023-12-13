@@ -1,13 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #E6E6E6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-inp-div {
+  @apply flex flex-col gap-1;
+}
+
+.flx-btwn {
+  @apply flex justify-between;
+}
+
+.inp {
+  @apply h-9 border border-gray-300 rounded-md px-2;
+}
+
+form {
+  @apply w-full flex flex-col gap-6 p-8;
 }
